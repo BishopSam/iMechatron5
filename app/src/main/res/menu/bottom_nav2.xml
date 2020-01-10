@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home"/>
+    <item
+        android:id="@+id/navigation_scholarships"
+        android:icon="@drawable/ic_school_black_24dp"
+        android:title="@string/title_scholarships"
+        />
+
+    <item
+        android:id="@+id/navigation_mycourses"
+        android:icon="@drawable/ic_mycourses_24dp"
+        android:title="@string/title_mycourses"/>
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/ic_menu_blue_24dp"
+        android:title="@string/title_more"/>
+
+
+</menu>

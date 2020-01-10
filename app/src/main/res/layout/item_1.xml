@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="323dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="18dp"
+    app:cardBackgroundColor="#FFFF"
+    android:background="@drawable/logo"
+    app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:background="@color/cardview_shadow_end_color">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="201dp"
+            android:layout_height="62dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="63dp"
+            android:layout_alignParentBottom="true"
+            android:text="item1"
+            android:layout_above="@+id/tv2"
+            android:textColor="@color/colorNames"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:id="@+id/tv1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="91dp"
+            android:layout_toEndOf="@+id/tv1"
+            android:text="item1"
+            android:textColor="@color/colorNames"
+            android:textSize="20sp"
+            android:id="@+id/tv2"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

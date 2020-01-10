@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/error"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_error"/>
+
+    <TextView
+        android:layout_below="@+id/iv_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="iMechatron is currently not able to provide in-app study materials due to some technical difficulties."
+        android:id="@+id/tv_pq1"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="italic"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorNames"/>
+    <TextView
+        android:id="@+id/tv_pq2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="italic"
+        android:text="However, our goal is to ensure students get the study guide they need, with that in mind we created a WhatsApp group for the sole purpose of
+distribution of pastquestions and textbooks, also interactions with your seniors and mates to enable you get the desired study experience."
+        android:layout_below="@+id/tv_pq1"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorNames"/>
+
+    <TextView
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="italic"
+        android:id="@+id/tv_pq3"
+        android:layout_below="@+id/tv_pq2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click on the button below and join the moving train.                             Thank you for your understanding"
+        android:textColor="@color/colorNames"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/bt_pq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join whatsapp group"
+        android:textColor="@android:color/white"
+        android:fontFamily="casual"
+        android:shadowColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:background="@drawable/viewstyle2"
+        android:layout_below="@+id/tv_pq3"/>
+</RelativeLayout>

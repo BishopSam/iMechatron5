@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <androidx.cardview.widget.CardView
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    android:id="@+id/card_view2"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="18dp"
+    app:cardBackgroundColor="#FFFF"
+    app:cardElevation="@dimen/cardview_compat_inset_shadow"
+    >
+
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+
+            <ImageView
+            android:id="@+id/iv_mycourses"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-4dp"
+             />
+
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_mycourses"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/colorNames"
+            android:id="@+id/tv1_mycourses"/>
+
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1_mycourses"
+            android:textSize="15sp"
+            android:textColor="@color/colorNames"
+            android:id="@+id/tv2_mycourses"
+            />
+
+
+            <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_navigate_next_black_24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/iv_mycourses"/>
+
+    </RelativeLayout>
+
+
+  </androidx.cardview.widget.CardView>
+</RelativeLayout>

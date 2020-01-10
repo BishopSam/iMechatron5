@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "180584016163",
+    "firebase_url": "https://imechatron.firebaseio.com",
+    "project_id": "imechatron",
+    "storage_bucket": "imechatron.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180584016163:android:aef6031c95feda6dbf4496",
+        "android_client_info": {
+          "package_name": "com.example.imechatron"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180584016163-etisslcgtrjdka9umuetovcbifcgr1vq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.imechatron",
+            "certificate_hash": "2d0c1e9afa8b24db6435c4e131f5714f9b7e88e1"
+          }
+        },
+        {
+          "client_id": "180584016163-u1a6i8jmdo5mh5349smh934mhelhcucr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDelDNAx6jqha2jeUQZkpvfixlqFdwxwws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180584016163-u1a6i8jmdo5mh5349smh934mhelhcucr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

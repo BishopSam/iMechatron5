@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_computer"
+        android:icon="@drawable/ic_devices_black_24dp"
+        android:title="Software"
+        />
+
+    <item
+        android:id="@+id/navigation_control"
+        android:icon="@drawable/ic_rv_hookup_black_24dp"
+        android:title="Control &amp; Drives"/>
+
+    <item
+        android:id="@+id/navigation_robotics"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="Robotics"/>
+
+
+</menu>

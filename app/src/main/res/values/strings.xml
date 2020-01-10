@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">iMechatron</string>
+    <string name="title_home">Home</string>
+    <string name="title_scholarships">Scholarships</string>
+    <string name="title_mycourses">My Courses</string>
+    <string name="title_more">More</string>
+    <string name="pics">pics</string>
+    <string-array name="grades">
+        <item>Select</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="credit_unit">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="tnu">
+        <item>Total Number of Units</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+</resources>

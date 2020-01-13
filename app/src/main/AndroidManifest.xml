@@ -44,6 +44,7 @@
             android:label="Study"/>
         <activity android:name=".GpCalculateActivity"
             android:label="GPA Calculator"/>
+        <activity android:name=".ResultActivity" />
     </application>
 
 </manifest>

@@ -2,14 +2,23 @@ package com.example.imechatron;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 public class ResultActivity extends AppCompatActivity {
+
+    private RecyclerView mRecyclerView;
+    private CourseResultAdapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
+
 
     public static final String KEY_CGPA = "cgpaString";
     public static final String KEY_COURSES = "courses";
@@ -25,20 +34,34 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        imageResult = findViewById(R.id.image_result);
-        tvCgpa = findViewById(R.id.tv_cgpa);
-        tvRemark = findViewById(R.id.tv_remark);
-        tvClass = findViewById(R.id.tv_class);
-        tvViewCourses = findViewById(R.id.tv_view_courses);
-
         Intent intent = getIntent();
-        if (intent != null){
+        if (intent != null) {
             cgpaString = intent.getStringExtra(KEY_CGPA);
-            courseResults = (ArrayList<CourseResult>)intent.getSerializableExtra(KEY_COURSES);
+            courseResults = (ArrayList<CourseResult>) intent.getSerializableExtra(KEY_COURSES);
             degreeClass = getDegreeClass(cgpaString);
-            populateResult();
-        }
 
+            mRecyclerView = findViewById(R.id.rv_result);
+            mAdapter = new CourseResultAdapter(courseResults);
+            mRecyclerView.setAdapter(mAdapter);
+            mRecyclerView.setLayoutManager(mLayoutManager);
+            mRecyclerView.setHasFixedSize(true);
+            mLayoutManager = new LinearLayoutManager(this);
+
+
+            imageResult = findViewById(R.id.image_result);
+            tvCgpa = findViewById(R.id.tv_cgpa);
+            tvRemark = findViewById(R.id.tv_remark);
+            tvClass = findViewById(R.id.tv_class);
+            tvViewCourses = findViewById(R.id.tv_view_courses);
+
+         /*   if (intent != null) {
+                cgpaString = intent.getStringExtra(KEY_CGPA);
+                courseResults = (ArrayList<CourseResult>) intent.getSerializableExtra(KEY_COURSES);
+                degreeClass = getDegreeClass(cgpaString);
+           */     populateResult();
+
+
+        }
     }
 
     private DegreeClass getDegreeClass(String cgpaString) {
@@ -71,11 +94,11 @@ public class ResultActivity extends AppCompatActivity {
 
     enum DegreeClass {
         FIRST_CLASS("First Class", "Excellent", R.drawable.ic_check_circle_black_24dp),
-        SECOND_CLASS_UPPER("Second Class Upper", "Good", R.drawable.ic_check_circle_black_24dp),
+        SECOND_CLASS_UPPER("Second Class Upper", "Very Good", R.drawable.ic_check_circle_black_24dp),
         SECOND_CLASS_LOWER("Second Class Class Lower", "Fair", R.drawable.ic_error_grey_24dp),
         THIRD_CLASS("Third Class", "You need to buckle up", R.drawable.ic_error_grey_24dp),
-        PASS("Pass", "You no go graduate o", R.drawable.ic_error_red_24dp),
-        FAIL("Fail", "Guy, school no be for you abeg", R.drawable.ic_error_red_24dp);
+        PASS("Pass", "Concentrate on your books", R.drawable.ic_error_red_24dp),
+        FAIL("Fail", "Guy, school no be for you abeg", R.drawable.ic_cancel_black_24dp);
 
         String className;
         String classRemark;

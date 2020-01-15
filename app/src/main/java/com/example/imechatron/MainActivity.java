@@ -11,6 +11,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.core.UserWriteRecord;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.InstanceIdResult;
 
@@ -28,7 +30,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     public FirebaseUser currentUser;
@@ -175,6 +179,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -183,6 +188,9 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.activity_main);
             BottomNavigationView navView = findViewById(R.id.nav_view);
             navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+
+
 
             Menu menu = navView.getMenu();
             MenuItem menuItem = menu.getItem(0);
@@ -197,6 +205,7 @@ public class MainActivity extends AppCompatActivity {
                 moreFragment = new MoreFragment();
 
             }
+
 
             displayHomeFragment();
             // Choose authentication providers

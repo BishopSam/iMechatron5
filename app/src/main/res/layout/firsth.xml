@@ -8,7 +8,6 @@
     android:layout_width="wrap_content" android:layout_height="wrap_content"
     android:layout_marginBottom="10dp"
     android:layout_centerInParent="true"
-    app:cardCornerRadius="50dp"
     android:id="@+id/card_view3">
 
     <RelativeLayout
@@ -22,7 +21,7 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/pics"
             android:adjustViewBounds="true"
-            android:src="@drawable/firsth3"/>
+            android:src="@drawable/thirdr"/>
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

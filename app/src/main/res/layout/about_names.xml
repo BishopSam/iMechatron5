@@ -24,7 +24,7 @@
             android:id="@+id/tv_aboutnames"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/breif_description"
+            android:text="BREIF DESCRIPTION"
             android:textAlignment="center"
             android:textSize="18.5sp"
             android:textStyle="bold"
@@ -38,23 +38,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_aboutnames"
-            android:text="@string/aboutnames1"
+            android:text="NAMES, FUTO Chapter is the official student organization for students of Mechatronic Engineering in FUTO, it stands for National Association of Mechatronic Engineering Students. It is one indivisible and indissoluble potent student alien. \n\nThe logo for this prestigious association is shown above, the gear representing the mechanical engineering, the microprocessor representing electrical and computer engineering and the microprocessor code representing the year the department started in FUTO"
             android:textColor="@android:color/black"/>
 
-        <TextView
-            android:padding="7dp"
-            android:id="@+id/tv2_aboutnames"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/aboutlogonames1"
-            android:textColor="@android:color/black"
-            android:layout_below="@+id/tv1_aboutnames"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/aims_and_objectives"
-            android:layout_below="@+id/tv2_aboutnames"
+            android:text="AIMS AND OBJECTIVES"
+            android:layout_below="@+id/tv1_aboutnames"
             android:layout_marginTop="19dp"
             android:textAlignment="center"
             android:textStyle="bold"
@@ -69,13 +61,13 @@
             android:layout_below="@id/tv3_aboutnames"
             android:layout_marginTop="12dp"
             android:padding="7dp"
-            android:text="@string/aimsofnames1"
+            android:text="1. To promote unity, understanding and co-operation amongst all Mechatronic Engineering students in order to achieve our aims and objectives. \n\n2. To organize and participate in symposia, seminars, lectures, exhibitions, film shows, social functions, etc. aimed at promoting understanding between the association and other Mechatronics Engineering Organizations worldwide. \n\n3. To promote and enhance the image of our profession:  Mechatronics Engineering within the campus, Nigeria and the world at large. \n\n4. To seek the welfare of the members of the association by looking into their problems and making representation and or recommendations and appropriate authorities on ways and means of achieving these objectives. \n\n5. To participate academically, politically, socially and culturally with other Organizations and Institutions. \n\n6. To link with the national body, and participate actively in national issues of concern. \n\n7. To unite student in sharing common views in matters of general concern in the department. \n\n8. To aid in the personal and academic development of members.  \n     a. Organizing symposia and Seminars in conjunction with other interested parties.  \n      b. Embarking on exposure trips like excursion and picnics \n\n9. To affiliate the association with the professional body, The Institute of Electrical and Electronic Engineering (IEEE) and other related (Mechatronics) body. \n\n10. In case of death of any member, to identify with the bereaved family and also to identify with members who are bereaved. \n\n11. To protect the right of the members. \n\n12. To organize welcome parties for fresher’s. \n\n13. To organize final yare send-forth and issuance of certificate of membership to the final years. \n\n14. To inculcate in the members, the ethics of the Mechatronics Engineering profession. "
             android:textColor="@android:color/black" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/download_the_constitution"
+            android:text="DOWNLOAD THE CONSTITUTION"
             android:background="@drawable/viewstyle2"
             android:textColor="@android:color/white"
             android:fontFamily="casual"

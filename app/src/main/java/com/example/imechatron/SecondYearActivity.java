@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class SecondYearActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
-    private SecondYAdapter mAdapter;
+    private FirsthAdapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
 
     @Override
@@ -22,15 +22,15 @@ public class SecondYearActivity extends AppCompatActivity {
         setContentView(R.layout.firstyearcourses);
 
 
-        final ArrayList<SecondY> secondYList = new ArrayList<>();
-        secondYList.add(new SecondY(R.drawable.secondh));
-        secondYList.add(new SecondY(R.drawable.secondr));
+        final ArrayList<Firsth> firsthList = new ArrayList<>();
+        firsthList.add(new Firsth(R.drawable.secondh));
+        firsthList.add(new Firsth(R.drawable.secondr));
 
 
         mRecyclerView = findViewById(R.id.rv_firsty);
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(this);
-        mAdapter = new SecondYAdapter(secondYList);
+        mAdapter = new FirsthAdapter(firsthList);
 
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);

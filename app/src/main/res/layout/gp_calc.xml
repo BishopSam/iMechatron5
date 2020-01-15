@@ -17,19 +17,19 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="8"
+            android:layout_weight="7"
             android:text="Course Code" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="5"
+            android:layout_weight="3"
             android:text="Units" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="5"
+            android:layout_weight="3"
             android:text="Grade" />
 
         <TextView
@@ -60,8 +60,13 @@
             <TextView
                 android:id="@+id/tv_add_course"
                 android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:textSize="16.5sp"
+                android:drawableEnd="@drawable/ic_add_circle_black_24dp"
+                android:background="@drawable/viewstyle4"
                 android:layout_height="wrap_content"
-                android:text="Add new course"
+                android:text="Add New Course"
+                android:textColor="#FFFFFF"
                 android:layout_below="@id/linear_layout"/>
 
 
@@ -79,7 +84,7 @@
         android:text="Calculate CGPA"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/viewstyle2"
         android:layout_alignParentBottom="true"/>
 
 

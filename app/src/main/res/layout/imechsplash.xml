@@ -24,7 +24,7 @@
         android:layout_marginTop="150dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/mechatrons_assemble"
+        android:text="mechatrons!, assemble.."
         android:textStyle="bold"
         android:textColor="@color/colorNames"
         android:textSize="18sp"

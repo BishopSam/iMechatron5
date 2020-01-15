@@ -49,6 +49,13 @@ public class MoreFragment extends Fragment implements View.OnClickListener {
             }
         });
 
+        btMore2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), AboutNamesActivity.class);
+                startActivity(intent);
+            }
+        });
         return view;
 
     }
